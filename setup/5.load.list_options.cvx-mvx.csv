@@ -1,0 +1,225 @@
+list_id|option_id|title|notes|CVX|Manufacturer|MVX|MVX-status|CDC_status|Updated-on
+lists|cvx_mvx|CVX-MVX Validation|Source - https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=tradename#prod
+cvx_mvx|305-PFR|ABRYSVO|RSV, bivalent, protein subunit RSVpreF, diluent reconstituted, 0.5 mL, PF|305|Pfizer, Inc|PFR|Active|Active|2023/07/12|
+cvx_mvx|75-MIP|ACAM2000|Vaccinia (smallpox, monkeypox), live|75|Emergent BioSolutions|MIP|Active|Active|2022/06/10|
+cvx_mvx|75-ACA|ACAM2000|Vaccinia (smallpox, monkeypox), live|75|Acambis, Inc|ACA|Inactive|Inactive|2010/05/28|
+cvx_mvx|20-ACEL-IMUNE|ACEL-IMUNE|DTaP|20        ||          |Inactive|Inactive|2010/09/01|
+cvx_mvx|48-PMC|ACTHIB|Hib (PRP-T)|48|Sanofi Pasteur|PMC|Active|Active|2010/05/28|
+cvx_mvx|115-PMC|ADACEL|Tdap|115|Sanofi Pasteur|PMC|Active|Active|2010/05/28|
+cvx_mvx|143-BRR|Adenovirus types 4 and 7|Adenovirus types 4 and 7|143|Barr Laboratories|BRR|Inactive|Inactive|2019/07/30|
+cvx_mvx|143-TVA|Adenovirus types 4 and 7|Adenovirus types 4 and 7|143|TEVA Pharmaceuticals USA |TVA|Active|Active|2019/07/23|
+cvx_mvx|141-SEQ|Afluria|Influenza, split virus, trivalent, preservative|141|Seqirus|SEQ|Active|Inactive|2024/04/25|
+cvx_mvx|141-CSL|AFLURIA|Influenza, split virus, trivalent, preservative|141|bioCSL|CSL|Inactive|Inactive|2016/09/26|
+cvx_mvx|150-SEQ|Afluria quadrivalent, preservative free|Influenza, split virus, quadrivalent, PF|150|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|161-SEQ|Afluria quadrivalent, preservative free, pediatric|Influenza, injectable,quadrivalent, preservative free, pediatric|161|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|158-SEQ|Afluria quadrivalent, with preservative|Influenza, split virus, quadrivalent, preservative|158|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|140-SEQ|Afluria trivalent, preservative free|Influenza, split virus, trivalent, PF|140|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|141-SEQ|Afluria trivalent, with preservative|Influenza, split virus, trivalent, preservative|141|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|140-SEQ|Afluria, preservative free|Influenza, split virus, trivalent, PF|140|Seqirus|SEQ|Active|Inactive|2022/12/15|
+cvx_mvx|140-CSL|Afluria, preservative free|Influenza, split virus, trivalent, PF|140|bioCSL|CSL|Inactive|Inactive|2022/12/15|
+cvx_mvx|140-NOV|AGRIFLU|Influenza, split virus, trivalent, PF|140|Novartis Pharmaceutical Corporation|NOV|Inactive|Inactive|2017/11/15|
+cvx_mvx|303-SKB|Arexvy|RSV, recombinant, protein subunit RSVpreF, adjuvant reconstituted, 0.5 mL, PF|303|GlaxoSmithKline|SKB|Active|Active|2023/07/12|
+cvx_mvx|801-SKB|AS03 adjuvant|AS03 Adjuvant|801|GlaxoSmithKline|SKB|Active|Inactive|2015/09/11|
+cvx_mvx|210-ASZ|AstraZeneca COVID-19 Vaccine (Non-US tradenames include VAXZEVRIA, COVISHIELD)|COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL|210|AstraZeneca|ASZ|Active|Inactive|2025/09/09|
+cvx_mvx|05-MSD|ATTENUVAX|measles|05|Merck and Co., Inc.|MSD|Active|Inactive|2015/04/28|
+cvx_mvx|163-SKB|Bexsero|meningococcal B, OMV|163|GlaxoSmithKline|SKB|Active|Active|2016/03/22|
+cvx_mvx|163-NOV|Bexsero|meningococcal B, OMV|163|Novartis Pharmaceutical Corporation|NOV|Inactive|Active|2015/02/02|
+cvx_mvx|307-PMC|BEYFORTUS|RSV, mAb, nirsevimab-alip, 1 mL, neonate to 24 months|307|Sanofi Pasteur|PMC|Active|Active|2023/07/21|
+cvx_mvx|306-PMC|BEYFORTUS|RSV, mAb, nirsevimab-alip, 0.5 mL, neonate to 24 months|306|Sanofi Pasteur|PMC|Active|Active|2023/07/21|
+cvx_mvx|38-|BIAVAX II|rubella/mumps|38        ||          |Inactive|Inactive|2010/09/01|
+cvx_mvx|24-MIP|BIOTHRAX|Anthrax, pre-exposure prophylaxis, post-exposure prophylaxis|24|Emergent BioSolutions|MIP|Active|Active|2013/08/09|
+cvx_mvx|115-SKB|BOOSTRIX|Tdap|115|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|327-MSD|CAPVAXIVE|Pneumococcal conjugate PCV21, polysaccharide CRM197 conjugate, PF|327|Merck and Co., Inc.|MSD|Active|Active|2024/07/11|
+cvx_mvx|20-CERTIVA|CERTIVA|DTaP|20        ||          |Inactive|Inactive|2010/09/01|
+cvx_mvx|118-SKB|CERVARIX|HPV, bivalent|118|GlaxoSmithKline|SKB|Active|Inactive|2016/11/22|
+cvx_mvx|208-PFR|COMIRNATY|COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose|208|Pfizer, Inc|PFR|Active|Active|2023/09/06|
+cvx_mvx|217-PFR|COMIRNATY|COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose|217|Pfizer, Inc|PFR|Active|Active|2023/09/06|
+cvx_mvx|309-PFR|COMIRNATY|COVID-19, mRNA, LNP-S, PF, tris-sucrose, 30 mcg/0.3 mL|309|Pfizer, Inc|PFR|Active|Active|2023/09/06|
+cvx_mvx|310-PFR|COMIRNATY|COVID-19, mRNA, LNP-S, PF, tris-sucrose, 10 mcg/0.3 mL|310|Pfizer, Inc|PFR|Active|Active|2023/09/06|
+cvx_mvx|51-MSD|COMVAX|Hib-Hep B|51|Merck and Co., Inc.|MSD|Active|Inactive|2016/03/11|
+cvx_mvx|506-CAN|CONVIDECIA (CanSino Biologics) COVID-19 Vaccine|COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology|506|CanSino Biologics, Inc|CAN|Active|Active|2022/11/01|
+cvx_mvx|511-SNV|Coronavac (Sinovac) COVID-19 Vaccine|COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)|511|Sinovac |SNV|Active|Active|2021/07/13|
+cvx_mvx|502-BBI|COVAXIN (Bharat) COVID-19 Vaccine|COVID-19 IV Non-US Vaccine (COVAXIN)|502|Bharat Biotech International Limited|BBI|Active|Active|2022/11/01|
+cvx_mvx|512-MDO|Covifenz|SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)|512|Medicago, Inc|MDO|Active|Active|2022/04/11|
+cvx_mvx|318-MIP|CYFENDUS|Anthrax, post-exposure prophylaxis|318|Emergent BioSolutions|MIP|Active|Active|2023/11/02|
+cvx_mvx|106-PMC|DAPTACEL|DTaP, 5 pertussis antigens|106|Sanofi Pasteur|PMC|Active|Active|2010/05/28|
+cvx_mvx|113-PMC|DECAVAC|Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed|113|Sanofi Pasteur|PMC|Active|Inactive|2017/10/27|
+cvx_mvx|56-PMC|DENGVAXIA|dengue fever tetravalent|56|Sanofi Pasteur|PMC|Active|Active|2019/09/04|
+cvx_mvx|75-DRYVAX|DRYVAX|Vaccinia (smallpox, monkeypox), live|75        ||          |Inactive|Inactive|2010/09/01|
+cvx_mvx|28-PMC|DT(GENERIC)|DT (pediatric)|28|Sanofi Pasteur|PMC|Active|Inactive|2024/12/06|
+cvx_mvx|332-MSD|ENFLONSIA|RSV, mAb, clesrovimab-cfor, 0.7 mL, neonate and infant, PF|332|Merck and Co., Inc.|MSD|Active|Active|2025/07/02|
+cvx_mvx|08-SKB|ENGERIX B-PEDS|Hep B, adolescent or pediatric|08|GlaxoSmithKline|SKB|Active|Active|2013/08/09|
+cvx_mvx|43-SKB|ENGERIX-B-ADULT|Hep B, adult|43|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|44-SKB|ENGERIX-B-ADULT|Hep B, high-dosage, dialysis or IC|44|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|204-MSD|ERVEBO (Ebola Zaire Vaccine, Live)|Ebola Zaire vaccine, live, recombinant, 1mL dose|204|Merck and Co., Inc.|MSD|Active|Active|2023/01/12|
+cvx_mvx|168-NOV|Fluad|Influenza, adjuvanted, trivalent, PF|168|Novartis Pharmaceutical Corporation|NOV|Inactive|Inactive|2024/05/02|
+cvx_mvx|168-SEQ|Fluad|Influenza, adjuvanted, trivalent, PF|168|Seqirus|SEQ|Active|Inactive|2024/05/02|
+cvx_mvx|205-SEQ|FLUAD Quadrivalent|Influenza, adjuvanted, quadrivalent, PF|205|Seqirus|SEQ|Active|Active|2020/07/20|
+cvx_mvx|168-SEQ|Fluad trivalent, preservative free|Influenza, adjuvanted, trivalent, PF|168|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|140-SKB|FLUARIX|Influenza, split virus, trivalent, PF|140|GlaxoSmithKline|SKB|Active|Inactive|2024/05/13|
+cvx_mvx|150-SKB|Fluarix quadrivalent, preservative free|Influenza, split virus, quadrivalent, PF|150|GlaxoSmithKline|SKB|Active|Active|2024/05/14|
+cvx_mvx|140-SKB|Fluarix trivalent, preservative free|Influenza, split virus, trivalent, PF|140|GlaxoSmithKline|SKB|Active|Active|2024/05/14|
+cvx_mvx|155-PSC|Flublok|Influenza, recombinant, trivalent, PF|155|Protein Sciences|PSC|Active|Inactive|2024/05/01|
+cvx_mvx|185-PSC|Flublok quadrivalent|Influenza, recombinant, quadrivalent, PF|185|Protein Sciences|PSC|Active|Inactive|2019/05/02|
+cvx_mvx|185-PMC|Flublok quadrivalent, preservative free|Influenza, recombinant, quadrivalent, PF|185|Sanofi Pasteur|PMC|Active|Active|2024/05/14|
+cvx_mvx|155-PMC|Flublok trivalent, preservative free|Influenza, recombinant, trivalent, PF|155|Sanofi Pasteur|PMC|Active|Active|2024/05/14|
+cvx_mvx|153-NOV|Flucelvax|Influenza, MDCK, trivalent, PF|153|Novartis Pharmaceutical Corporation|NOV|Inactive|Inactive|2024/05/01|
+cvx_mvx|171-SEQ|Flucelvax quadrivalent, preservative free|Influenza, MDCK, quadrivalent, PF|171|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|186-SEQ|Flucelvax quadrivalent, with preservative|Influenza, MDCK, quadrivalent, preservative|186|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|153-SEQ|Flucelvax trivalent, preservative free|Influenza, MDCK, trivalent, PF|153|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|320-SEQ|Flucelvax trivalent, with preservative|Influenza, MDCK, trivalent, preservative|320|Seqirus|SEQ|Active|Active|2024/05/14|
+cvx_mvx|141-IDB|FLULAVAL|Influenza, split virus, trivalent, preservative|141|ID Biomedical|IDB|Active|Inactive|2024/04/25|
+cvx_mvx|158-IDB|Flulaval quadrivalent|Influenza, split virus, quadrivalent, preservative|158|ID Biomedical|IDB|Active|Inactive|2025/07/01|
+cvx_mvx|150-IDB|Flulaval quadrivalent, preservative free|Influenza, split virus, quadrivalent, PF|150|ID Biomedical|IDB|Active|Active|2024/05/14|
+cvx_mvx|140-IDB|Flulaval trivalent, preservative free|Influenza, split virus, trivalent, PF|140|ID Biomedical|IDB|Active|Active|2024/05/14|
+cvx_mvx|140-IDB|Flulaval, preservative free|Influenza, split virus, trivalent, PF|140|ID Biomedical|IDB|Active|Inactive|2022/12/15|
+cvx_mvx|111-MED|FLUMIST|Influenza, live, trivalent, intranasal, PF|111|MedImmune, Inc. (AstraZeneca)|MED|Active|Inactive|2015/10/23|
+cvx_mvx|149-MED|Flumist quadrivalent|Influenza, live, quadrivalent, intranasal|149|MedImmune, Inc. (AstraZeneca)|MED|Active|Active|2012/08/07|
+cvx_mvx|111-MED|FluMist trivalent|Influenza, live, trivalent, intranasal, PF|111|MedImmune, Inc. (AstraZeneca)|MED|Active|Active|2024/05/14|
+cvx_mvx|333-MED|FluMist trivalent (self/caregiver administered)|Influenza, live, trivalent, intranasal, self/caregiver admin, PF|333|MedImmune, Inc. (AstraZeneca)|MED|Active|Active|2025/07/21|
+cvx_mvx|141-SEQ|Fluvirin|Influenza, split virus, trivalent, preservative|141|Seqirus|SEQ|Active|Inactive|2024/04/25|
+cvx_mvx|141-NOV|FLUVIRIN|Influenza, split virus, trivalent, preservative|141|Novartis Pharmaceutical Corporation|NOV|Inactive|Inactive|2024/04/25|
+cvx_mvx|140-SEQ|Fluvirin preservative free|Influenza, split virus, trivalent, PF|140|Seqirus|SEQ|Active|Inactive|2022/12/15|
+cvx_mvx|140-NOV|FLUVIRIN-PRESERVATIVE FREE|Influenza, split virus, trivalent, PF|140|Novartis Pharmaceutical Corporation|NOV|Inactive|Inactive|2022/12/15|
+cvx_mvx|141-PMC|FLUZONE|Influenza, split virus, trivalent, preservative|141|Sanofi Pasteur|PMC|Active|Inactive|2024/04/25|
+cvx_mvx|231-PMC|FLUZONE High-Dose Quadrivalent Southern Hemisphere|influenza, Southern Hemisphere, high-dose, quadrivalent|231|Sanofi Pasteur|PMC|Active|Active|2023/03/14|
+cvx_mvx|197-PMC|Fluzone High-Dose quadrivalent, preservative free|Influenza, high-dose, quadrivalent, PF|197|Sanofi Pasteur|PMC|Active|Active|2024/05/14|
+cvx_mvx|135-PMC|Fluzone High-Dose trivalent, preservative free|Influenza, high-dose, trivalent, PF|135|Sanofi Pasteur|PMC|Active|Active|2024/05/14|
+cvx_mvx|166-PMC|Fluzone Quad Intradermal|influenza, intradermal, quadrivalent, preservative free|166|Sanofi Pasteur|PMC|Active|Inactive|2022/12/15|
+cvx_mvx|201-PMC|FLUZONE Quadrivalent Southern Hemisphere|Influenza, Southern Hemisphere, quadrivalent, PF|201|Sanofi Pasteur|PMC|Active|Active|2020/03/12|
+cvx_mvx|202-PMC|FLUZONE Quadrivalent Southern Hemisphere|influenza, Southern Hemisphere, quadrivalent, with preservative|202|Sanofi Pasteur|PMC|Active|Active|2020/03/12|
+cvx_mvx|200-PMC|FLUZONE Quadrivalent Southern Hemisphere, Pediatric|influenza, Southern Hemisphere, pediatric, preservative free|200|Sanofi Pasteur|PMC|Active|Active|2020/04/21|
+cvx_mvx|161-PMC|Fluzone Quadrivalent, pediatric|Influenza, injectable,quadrivalent, preservative free, pediatric|161|Sanofi Pasteur|PMC|Active|Active|2014/07/23|
+cvx_mvx|331-PMC|FLUZONE Trivalent Southern Hemisphere|Influenza, Southern Hemisphere, trivalent, PF|331|Sanofi Pasteur|PMC|Active|Active|2025/04/22|
+cvx_mvx|140-PMC|Fluzone trivalent, preservative free|Influenza, split virus, trivalent, PF|140|Sanofi Pasteur|PMC|Active|Active|2024/05/17|
+cvx_mvx|141-PMC|Fluzone trivalent, with preservative|Influenza, split virus, trivalent, preservative|141|Sanofi Pasteur|PMC|Active|Active|2024/05/14|
+cvx_mvx|144-PMC|Fluzone, intradermal|influenza, seasonal, intradermal, preservative free|144|Sanofi Pasteur|PMC|Active|Inactive|2022/12/15|
+cvx_mvx|158-PMC|Fluzone, Quadrivalent|Influenza, split virus, quadrivalent, preservative|158|Sanofi Pasteur|PMC|Active|Active|2013/08/08|
+cvx_mvx|150-PMC|Fluzone, quadrivalent, preservative free|Influenza, split virus, quadrivalent, PF|150|Sanofi Pasteur|PMC|Active|Active|2014/10/21|
+cvx_mvx|135-PMC|FLUZONE-HIGH DOSE|Influenza, high-dose, trivalent, PF|135|Sanofi Pasteur|PMC|Active|Inactive|2024/05/01|
+cvx_mvx|140-PMC|FLUZONE-PRESERVATIVE FREE|Influenza, split virus, trivalent, PF|140|Sanofi Pasteur|PMC|Active|Inactive|2022/12/15|
+cvx_mvx|62-MSD|GARDASIL|HPV, quadrivalent|62|Merck and Co., Inc.|MSD|Active|Inactive|2010/05/28|
+cvx_mvx|165-MSD|Gardasil 9|HPV9|165|Merck and Co., Inc.|MSD|Active|Active|2014/12/11|
+cvx_mvx|52-SKB|HAVRIX-ADULT|Hep A, adult|52|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|83-SKB|HAVRIX-PEDS|Hep A, ped/adol, 2 dose|83|GlaxoSmithKline|SKB|Active|Active|2013/08/09|
+cvx_mvx|189-DVX|HEPLISAV-B|HepB-CpG|189|Dynavax, Inc.|DVX|Active|Active|2017/10/27|
+cvx_mvx|48-SKB|HIBERIX|Hib (PRP-T)|48|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|47-HIBTITER|HIBTITER|Hib (HbOC)|47        ||          |Inactive|Inactive|2010/08/18|
+cvx_mvx|18-PMC|Imovax|rabies, intramuscular injection|18|Sanofi Pasteur|PMC|Active|Inactive|2016/12/12|
+cvx_mvx|175-PMC|IMOVAX|Rabies - IM Diploid cell culture|175|Sanofi Pasteur|PMC|Active|Active|2016/10/19|
+cvx_mvx|40-PMC|IMOVAX ID|rabies, intradermal injection|40|Sanofi Pasteur|PMC|Active|Inactive|2016/11/22|
+cvx_mvx|20-SKB|INFANRIX|DTaP|20|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|160-IDB|Influenza A (H5N1) -2013|Influenza A monovalent (H5N1), ADJUVANTED-2013|160|ID Biomedical|IDB|Active|Active|2014/01/16|
+cvx_mvx|160-SKB|Influenza A monovalent (H5N1), ADJUVANTED-2013|Influenza A monovalent (H5N1), ADJUVANTED-2013|160|GlaxoSmithKline|SKB|Active|Inactive|2015/08/27|
+cvx_mvx|10-PMC|IPOL|IPV|10|Sanofi Pasteur|PMC|Active|Active|2010/05/28|
+cvx_mvx|317-VAL|IXCHIQ|Chikungunya live attenuated vaccine, 0.5 mL, PF|317|Valneva|VAL|Active|Active|2023/12/14|
+cvx_mvx|134-VAL|Ixiaro|Japanese Encephalitis IM|134|Valneva|VAL|Active|Active|2016/07/19|
+cvx_mvx|134-INT|IXIARO|Japanese Encephalitis IM|134|Intercell Biomedical|INT|Inactive|Inactive|2016/07/19|
+cvx_mvx|134-VET|IXIARO|Japanese Encephalitis IM|134|Vetter Pharma Fertigung GmbH & Co. KG|VET|Inactive|Active|2017/12/04|
+cvx_mvx|212-JSN|Janssen (J&J) COVID-19 Vaccine|COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL|212|Janssen|JSN|Active|Inactive|2025/09/09|
+cvx_mvx|39-JPN|JE-VAX|Japanese encephalitis SC|39|The Research Foundation for Microbial Diseases of Osaka University (BIKEN)|JPN|Inactive|Inactive|2015/04/29|
+cvx_mvx|206-BN|JYNNEOS|Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection|206|Bavarian Nordic A/S|BN|Active|Active|2022/05/20|
+cvx_mvx|130-SKB|KINRIX|DTaP-IPV|130|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|114-PMC|MENACTRA|meningococcal MCV4P|114|Sanofi Pasteur|PMC|Active|Inactive|2024/06/05|
+cvx_mvx|148-SKB|MENHIBRIX|Meningococcal C/Y-HIB PRP|148|GlaxoSmithKline|SKB|Active|Inactive|2017/11/15|
+cvx_mvx|32-PMC|MENOMUNE|meningococcal MPSV4|32|Sanofi Pasteur|PMC|Active|Inactive|2017/10/27|
+cvx_mvx|203-PMC|MenQuadfi|meningococcal conjugate quadrivalent, MenACWY-TT (MCV4)|203|Sanofi Pasteur|PMC|Active|Active|2020/05/27|
+cvx_mvx|136-SKB|Menveo|Meningococcal MCV4O|136|GlaxoSmithKline|SKB|Active|Active|2016/03/22|
+cvx_mvx|136-NOV|MENVEO|Meningococcal MCV4O|136|Novartis Pharmaceutical Corporation|NOV|Inactive|Active|2016/03/22|
+cvx_mvx|06-MSD|MERUVAX II|rubella|06|Merck and Co., Inc.|MSD|Active|Inactive|2015/04/28|
+cvx_mvx|03-MSD|M-M-R II|MMR|03|Merck and Co., Inc.|MSD|Active|Active|2010/05/28|
+cvx_mvx|334-MOD|mNEXSPIKE|COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL|334|Moderna US, Inc.|MOD|Active|Active|2025/08/28|
+cvx_mvx|519-MOD|Moderna COVID-19 Bivalent, Original + BA.1 (Non-US Tradename Spikevax Bivalent)|COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna|519|Moderna US, Inc.|MOD|Active|Inactive|2025/09/09|
+cvx_mvx|229-MOD|Moderna COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename Spikevax Bivalent)|COVID-19, mRNA, LNP-S, bivalent, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose|229|Moderna US, Inc.|MOD|Active|Inactive|2025/09/09|
+cvx_mvx|230-MOD|Moderna COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename Spikevax Bivalent)|COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL|230|Moderna US, Inc.|MOD|Active|Inactive|2025/09/09|
+cvx_mvx|228-MOD|Moderna COVID-19 Vaccine (non-US Spikevax)|COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose|228|Moderna US, Inc.|MOD|Active|Inactive|2025/09/09|
+cvx_mvx|221-MOD|Moderna COVID-19 Vaccine (non-US Spikevax)|COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose|221|Moderna US, Inc.|MOD|Active|Inactive|2025/09/09|
+cvx_mvx|207-MOD|Moderna COVID-19 Vaccine (non-US Spikevax)|COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose|207|Moderna US, Inc.|MOD|Active|Inactive|2025/09/09|
+cvx_mvx|227-MOD|Moderna COVID-19 Vaccine (non-US Spikevax)|COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose|227|Moderna US, Inc.|MOD|Active|Inactive|2025/09/09|
+cvx_mvx|311-MOD|Moderna COVID-19 Vaccine (US only)|COVID-19, mRNA, LNP-S, PF, 25 mcg/0.25 mL|311|Moderna US, Inc.|MOD|Active|Inactive|2025/09/09|
+cvx_mvx|326-MOD|mRESVIA |RSV, mRNA, injectable, PF|326|Moderna US, Inc.|MOD|Active|Active|2024/06/06|
+cvx_mvx|07-MUMPSVAX|MUMPSVAX|mumps|07        ||          |Inactive|Inactive|2010/09/01|
+cvx_mvx|19-MYCOBAX|MYCOBAX|BCG|19        ||          |Inactive|Inactive|2015/12/11|
+cvx_mvx|211-NVX|Novavax COVID-19 Vaccine (Non-US Tradenames NUVAXOVID, COVOVAX)|COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL|211|Novavax, Inc.|NVX|Active|Inactive|2025/09/09|
+cvx_mvx|313-NVX|Novavax COVID-19 Vaccine, Adjuvanted (US Only)|COVID-19, subunit, rS-nanoparticle, adjuvanted, PF, 5 mcg/0.5 mL|313|Novavax, Inc.|NVX|Active|Inactive|2025/09/09|
+cvx_mvx|127-CSL|Novel influenza-H1N1-09|Novel influenza-H1N1-09|127|bioCSL|CSL|Inactive|Inactive|2015/08/27|
+cvx_mvx|127-NOV|Novel influenza-H1N1-09|Novel influenza-H1N1-09|127|Novartis Pharmaceutical Corporation|NOV|Inactive|Inactive|2015/08/27|
+cvx_mvx|127-PMC|Novel influenza-H1N1-09|Novel influenza-H1N1-09|127|Sanofi Pasteur|PMC|Active|Inactive|2015/08/27|
+cvx_mvx|125-MED|Novel Influenza-H1N1-09, nasal|Novel Influenza-H1N1-09, nasal|125|MedImmune, Inc. (AstraZeneca)|MED|Active|Inactive|2015/08/27|
+cvx_mvx|126-CSL|Novel influenza-H1N1-09, preservative-free|Novel influenza-H1N1-09, preservative-free|126|bioCSL|CSL|Inactive|Inactive|2015/08/27|
+cvx_mvx|126-NOV|Novel influenza-H1N1-09, preservative-free|Novel influenza-H1N1-09, preservative-free|126|Novartis Pharmaceutical Corporation|NOV|Inactive|Inactive|2015/08/27|
+cvx_mvx|126-PMC|Novel influenza-H1N1-09, preservative-free|Novel influenza-H1N1-09, preservative-free|126|Sanofi Pasteur|PMC|Active|Inactive|2015/08/27|
+cvx_mvx|313-NVX|NUVAXOVID|COVID-19, subunit, rS-nanoparticle, adjuvanted, PF, 5 mcg/0.5 mL|313|Novavax, Inc.|NVX|Active|Active|2025/08/28|
+cvx_mvx|48-OMNIHIB|OMNIHIB|Hib (PRP-T)|48        ||          |Inactive|Inactive|2010/09/01|
+cvx_mvx|02-ORIMUNE|ORIMUNE|OPV, trivalent|02        ||          |Inactive|Inactive|2010/09/01|
+cvx_mvx|110-SKB|PEDIARIX|DTaP-Hep B-IPV|110|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|49-MSD|PEDVAXHIB|Hib (PRP-OMP)|49|Merck and Co., Inc.|MSD|Active|Active|2010/05/28|
+cvx_mvx|316-PFR|PENBRAYA|Meningococcal polysaccharide (MenACWY-TT conjugate), (MenB), PF|316|Pfizer, Inc|PFR|Active|Active|2023/11/02|
+cvx_mvx|328-SKB|PENMENVY|Meningococcal oligosaccharide (MenACWY), (MenB), PF|328|GlaxoSmithKline|SKB|Active|Active|2025/03/18|
+cvx_mvx|120-PMC|PENTACEL|DTaP-Hib-IPV|120|Sanofi Pasteur|PMC|Active|Active|2010/05/28|
+cvx_mvx|520-PFR|Pfizer COVID-19 Bivalent, Original + BA.1 (Non-US Tradename COMIRNATY Bivalent)|COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech|520|Pfizer, Inc|PFR|Active|Active|2022/11/17|
+cvx_mvx|300-PFR|Pfizer-BioNTech COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename COMIRNATY Bivalent)|COVID-19, mRNA, LNP-S, bivalent, PF, 30 mcg/0.3 mL dose|300|Pfizer, Inc|PFR|Active|Inactive|2025/09/09|
+cvx_mvx|302-PFR|Pfizer-BioNTech COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename COMIRNATY Bivalent)|COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose|302|Pfizer, Inc|PFR|Active|Inactive|2025/09/09|
+cvx_mvx|301-PFR|Pfizer-BioNTech COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename COMIRNATY Bivalent)|COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL dose|301|Pfizer, Inc|PFR|Active|Inactive|2025/09/09|
+cvx_mvx|218-PFR|Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)|COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose|218|Pfizer, Inc|PFR|Active|Inactive|2025/09/09|
+cvx_mvx|217-PFR|Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)|COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose|217|Pfizer, Inc|PFR|Active|Inactive|2025/09/09|
+cvx_mvx|208-PFR|Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)|COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose|208|Pfizer, Inc|PFR|Active|Inactive|2025/09/09|
+cvx_mvx|219-PFR|Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)|COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose|219|Pfizer, Inc|PFR|Active|Inactive|2025/09/09|
+cvx_mvx|308-PFR|Pfizer-BioNTech COVID-19 Vaccine (US Only)|COVID-19, mRNA, LNP-S, PF, tris-sucrose, 3 mcg/0.3 mL|308|Pfizer, Inc|PFR|Active|Inactive|2025/09/09|
+cvx_mvx|310-PFR|Pfizer-BioNTech COVID-19 Vaccine (US Only)|COVID-19, mRNA, LNP-S, PF, tris-sucrose, 10 mcg/0.3 mL|310|Pfizer, Inc|PFR|Active|Inactive|2025/09/09|
+cvx_mvx|33-MSD|PNEUMOVAX 23|pneumococcal polysaccharide PPV23|33|Merck and Co., Inc.|MSD|Active|Active|2010/05/28|
+cvx_mvx|220-VBI|PREHEVBRIO Hepatitis B Vaccine (Recombinant)|HepB recombinant, 3-antigen, Al(OH)3|220|VBI Vaccines, Inc|VBI|Inactive|Inactive|2024/12/10|
+cvx_mvx|133-PFR|PREVNAR 13|Pneumococcal conjugate PCV 13|133|Pfizer, Inc|PFR|Active|Active|2010/05/28|
+cvx_mvx|133-WAL|PREVNAR 13|Pneumococcal conjugate PCV 13|133|Wyeth|WAL|Active|Inactive|2010/05/28|
+cvx_mvx|216-PFR|PREVNAR 20|Pneumococcal conjugate PCV20, polysaccharide CRM197 conjugate, adjuvant, PF|216|Pfizer, Inc|PFR|Active|Active|2021/08/18|
+cvx_mvx|100-WAL|PREVNAR 7|pneumococcal conjugate PCV 7|100|Wyeth|WAL|Active|Inactive|2015/09/24|
+cvx_mvx|100-WAL|PREVNAR 7|pneumococcal conjugate PCV 7|100|Wyeth|WAL|Active|Inactive|2015/09/24|
+cvx_mvx|03-SKB|Priorix|MMR|03|GlaxoSmithKline|SKB|Active|Active|2022/06/15|
+cvx_mvx|46-PROHIBIT|PROHIBIT|Hib (PRP-D)|46        ||          |Inactive|Inactive|2010/09/01|
+cvx_mvx|94-MSD|PROQUAD|MMRV|94|Merck and Co., Inc.|MSD|Active|Active|2010/05/28|
+cvx_mvx|130-PMC|Quadracel|DTaP-IPV|130|Sanofi Pasteur|PMC|Active|Active|2015/03/26|
+cvx_mvx|176-BN|RABAVERT|Rabies - IM fibroblast culture|176|Bavarian Nordic A/S|BN|Active|Active|2024/07/25|
+cvx_mvx|176-SKB|RABAVERT|Rabies - IM fibroblast culture|176|GlaxoSmithKline|SKB|Active|Inactive|2024/07/25|
+cvx_mvx|176-NOV|RABAVERT|Rabies - IM fibroblast culture|176|Novartis Pharmaceutical Corporation|NOV|Inactive|Inactive|2016/10/19|
+cvx_mvx|18-CHI|RabAvert|rabies, intramuscular injection|18|Chiron Corporation|CHI|Inactive|Inactive|2016/03/22|
+cvx_mvx|43-MSD|RECOMBIVAX-ADULT|Hep B, adult|43|Merck and Co., Inc.|MSD|Active|Active|2010/05/28|
+cvx_mvx|44-MSD|RECOMBIVAX-DIALYSIS|Hep B, high-dosage, dialysis or IC|44|Merck and Co., Inc.|MSD|Active|Active|2013/08/09|
+cvx_mvx|08-MSD|RECOMBIVAX-PEDS|Hep B, adolescent or pediatric|08|Merck and Co., Inc.|MSD|Active|Active|2013/08/09|
+cvx_mvx|119-SKB|ROTARIX|rotavirus, monovalent|119|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|116-MSD|ROTATEQ|rotavirus, pentavalent|116|Merck and Co., Inc.|MSD|Active|Active|2010/05/28|
+cvx_mvx|225-PMC|Sanofi COVID-19 |COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL|225|Sanofi Pasteur|PMC|Active|Inactive|2025/09/09|
+cvx_mvx|226-PMC|Sanofi COVID-19 |COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL|226|Sanofi Pasteur|PMC|Active|Inactive|2025/09/09|
+cvx_mvx|187-SKB|SHINGRIX|zoster recombinant|187|GlaxoSmithKline|SKB|Active|Active|2017/10/27|
+cvx_mvx|510-SPH|Sinopharm (BIBP) COVID-19 Vaccine|COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)|510|Sinopharm-Biotech|SPH|Active|Active|2021/07/13|
+cvx_mvx|312-MOD|SPIKEVAX|COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL|312|Moderna US, Inc.|MOD|Active|Active|2023/09/06|
+cvx_mvx|311-MOD|SPIKEVAX|COVID-19, mRNA, LNP-S, PF, 25 mcg/0.25 mL|311|Moderna US, Inc.|MOD|Active|Active|2023/09/06|
+cvx_mvx|207-MOD|SPIKEVAX|COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose|207|Moderna US, Inc.|MOD|Active|Active|2023/09/06|
+cvx_mvx|183-PMC|Stamaril|Yellow fever vaccine live - alt|183|Sanofi Pasteur|PMC|Active|Active|2017/03/02|
+cvx_mvx|09-GRF|Td, adsorbed |Td (adult), 2 Lf tetanus toxoid, preservative free, adsorbed|09|Grifols|GRF|Active|Inactive|2019/05/21|
+cvx_mvx|09-MBL|Td, adsorbed|Td (adult), 2 Lf tetanus toxoid, preservative free, adsorbed|09|Massachusetts Biologic Laboratories|MBL|Active|Inactive|2019/05/21|
+cvx_mvx|09-MBL|TDVAX|Td (adult), 2 Lf tetanus toxoid, preservative free, adsorbed|09|Massachusetts Biologic Laboratories|MBL|Active|Active|2019/05/21|
+cvx_mvx|113-PMC|Tenivac|Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed|113|Sanofi Pasteur|PMC|Active|Active|2013/08/09|
+cvx_mvx|35-PMC|TETANUS TOXOID (GENERIC)|tetanus toxoid, adsorbed|35|Sanofi Pasteur|PMC|Active|Inactive|2010/05/28|
+cvx_mvx|22-TETRAMUNE|TETRAMUNE|DTP-Hib|22        ||          |Inactive|Inactive|2010/09/01|
+cvx_mvx|19-MSD|TICE BCG|BCG|19|Merck and Co., Inc.|MSD|Active|Active|2021/07/26|
+cvx_mvx|223-PFR|TICOVAC|Tick-borne encephalitis, inactivated, PF, 0.25mL|223|Pfizer, Inc|PFR|Active|Active|2021/11/04|
+cvx_mvx|224-PFR|TICOVAC|Tick-borne encephalitis, inactivated, PF, 0.5mL|224|Pfizer, Inc|PFR|Active|Active|2021/11/04|
+cvx_mvx|50-PMC|TRIHIBIT|DTaP-Hib|50|Sanofi Pasteur|PMC|Active|Inactive|2017/03/21|
+cvx_mvx|20-PMC|TRIPEDIA|DTaP|20|Sanofi Pasteur|PMC|Active|Inactive|2017/11/15|
+cvx_mvx|162-PFR|Trumenba|meningococcal B, recombinant|162|Pfizer, Inc|PFR|Active|Active|2014/11/03|
+cvx_mvx|104-SKB|TWINRIX|Hep A-Hep B|104|GlaxoSmithKline|SKB|Active|Active|2010/05/28|
+cvx_mvx|101-PMC|TYPHIM VI|typhoid, ViCPs|101|Sanofi Pasteur|PMC|Active|Active|2010/05/28|
+cvx_mvx|53-TYPHOID-AKD|TYPHOID-AKD|typhoid, parenteral, AKD (U.S. military)|53        ||          |Inactive|Inactive|2013/08/09|
+cvx_mvx|52-MSD|VAQTA-ADULT|Hep A, adult|52|Merck and Co., Inc.|MSD|Active|Active|2010/05/28|
+cvx_mvx|83-MSD|VAQTA-PEDS|Hep A, ped/adol, 2 dose|83|Merck and Co., Inc.|MSD|Active|Active|2013/08/09|
+cvx_mvx|21-MSD|VARIVAX|varicella|21|Merck and Co., Inc.|MSD|Active|Active|2010/05/28|
+cvx_mvx|174-PAX|VAXCHORA|cholera, live attenuated|174|Emergent Travel Health, Inc (Formerly PaxVax)|PAX|Active|Inactive|2024/06/12|
+cvx_mvx|174-BN|Vaxchora|cholera, live attenuated|174|Bavarian Nordic A/S|BN|Active|Active|2024/06/12|
+cvx_mvx|146-MSP|VAXELIS|DTaP,IPV,Hib,HepB|146|MSP Vaccine Company - (partnership Merck and Sanofi Pasteur)|MSP|Active|Active|2021/07/21|
+cvx_mvx|215-MSD|VAXNEUVANCE|Pneumococcal conjugate PCV15, polysaccharide CRM197 conjugate, adjuvant, PF|215|Merck and Co., Inc.|MSD|Active|Active|2021/08/18|
+cvx_mvx|329-BN|VIMKUNYA|Chikungunya, VLP, recombinant, 0.8 mL, PF|329|Bavarian Nordic A/S|BN|Active|Active|2025/03/18|
+cvx_mvx|25-PAX|Vivotif|typhoid, oral|25|Emergent Travel Health, Inc (Formerly PaxVax)|PAX|Active|Inactive|2024/07/12|
+cvx_mvx|25-CRU|VIVOTIF BERNA|typhoid, oral|25|Crucell|CRU|Inactive|Inactive|2016/05/02|
+cvx_mvx|25-BN|Vivotif- BN|typhoid, oral|25|Bavarian Nordic A/S|BN|Active|Active|2024/07/12|
+cvx_mvx|37-PMC|YF-VAX|yellow fever live|37|Sanofi Pasteur|PMC|Active|Active|2010/05/28|
+cvx_mvx|121-MSD|ZOSTAVAX|zoster live|121|Merck and Co., Inc.|MSD|Active|Inactive|2024/12/06|

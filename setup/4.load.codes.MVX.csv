@@ -1,0 +1,90 @@
+code_type|code|code_text|code_text_short|active|updated_on
+998|AB|Abbott Laboratories|includes Ross Products Division, Solvay|0|2017/11/16
+998|ACA|Acambis, Inc|acquired by sanofi in sept 2008|0|2010/05/28
+998|AD|Adams Laboratories, Inc.||0|2017/11/16
+998|ALP|Alpha Therapeutic Corporation||0|2017/11/16
+998|AR|Armour|part of CSL|0|2010/05/28
+998|AVB|Aventis Behring L.L.C.|part of CSL|0|2010/05/28
+998|AVI|Aviron|acquired by Medimmune|0|2010/05/28
+998|BA|Baxter Healthcare Corporation-inactive||0|2010/05/28
+998|BAH|Baxter Healthcare Corporation|includes Hyland Immuno, Immuno International AG,and North American Vaccine, Inc./acquired some assets from alpha therapeutics|0|2017/11/16
+998|BAY|Bayer Corporation|Bayer Biologicals now owned by Talecris|0|2010/05/28
+998|BP|Berna Products||0|2010/05/28
+998|BPC|Berna Products Corporation|includes Swiss Serum and Vaccine Institute Berne|0|2017/11/16
+998|BTP|Biotest Pharmaceuticals Corporation|New owner of NABI HB as of December 2007, Does NOT replace NABI Biopharmaceuticals in this code list.|1|2010/05/28
+998|MIP|Emergent BioSolutions|Companies include Emergent Product Development Gaithersburg Inc. and former Emergent BioDefense Operations Lansing and Michigan Biologic Products Institute|1|2023/11/01
+998|CSL|bioCSL|bioCSL a part of Seqirus|0|2016/09/26
+998|CNJ|Cangene Corporation|Purchased by Emergent Biosolutions|0|2014/04/29
+998|CMP|Celltech Medeva Pharmaceuticals|Part of Novartis|0|2010/05/28
+998|CEN|Centeon L.L.C.||0|2010/05/28
+998|CHI|Chiron Corporation|Part of Novartis|0|2010/05/28
+998|CON|Connaught|acquired by Merieux|0|2010/05/28
+998|DVC|DynPort Vaccine Company, LLC||1|2010/05/28
+998|EVN|Evans Medical Limited|Part of Novartis|0|2010/05/28
+998|GEO|GeoVax Labs, Inc.||1|2010/05/28
+998|SKB|GlaxoSmithKline|includes SmithKline Beecham and Glaxo Wellcome|1|2010/05/28
+998|GRE|Greer Laboratories, Inc.||0|2017/11/16
+998|IAG|Immuno International AG|Part of Baxter|0|2010/05/28
+998|IUS|Immuno-U.S., Inc.||0|2017/11/16
+998|INT|Intercell Biomedical|subsidiary of Valneva|0|2016/07/19
+998|KGC|Korea Green Cross Corporation||1|2010/05/28
+998|LED|Lederle|became a part of WAL, now owned by Pfizer|0|2010/05/28
+998|MBL|Massachusetts Biologic Laboratories|formerly Massachusetts Public Health Biologic Laboratories|1|2010/05/28
+998|MA|Massachusetts Public Health Biologic Laboratories||0|2010/05/28
+998|MED|MedImmune, Inc. (AstraZeneca)|Subsidiary of AstraZeneca|1|2019/05/15
+998|MSD|Merck and Co., Inc.||1|2012/10/18
+998|IM|Merieux|Part of sanofi|0|2010/05/28
+998|MIL|Miles||0|2010/05/28
+998|NAB|NABI|formerly North American Biologicals, Inc.|1|2010/05/28
+998|NYB|New York Blood Center||0|2017/11/16
+998|NAV|North American Vaccine, Inc.|part of Baxter|0|2010/05/28
+998|NOV|Novartis Pharmaceutical Corporation|Novartis has sold its flu vaccines to Seqirus and other vaccines to GlaxoSmithKline. While Novartis vaccines may still be in circulation, its status is set to not active.|0|2016/04/13
+998|NVX|Novavax, Inc.||1|2020/10/08
+998|OTC|Organon Teknika Corporation|Subsidiary of Merck. Sold by Merck 6/8/2021. Effective June 2021  Merck is labeler for BCG product.|0|2021/07/21
+998|ORT|Ortho-clinical Diagnostics|a J & J company (formerly Ortho Diagnostic Systems, Inc.)|0|2017/11/16
+998|PD|Parkedale Pharmaceuticals|no website and no news articles (formerly Parke-Davis)|0|2010/05/28
+998|PWJ|PowderJect Pharmaceuticals|See Novartis|0|2010/05/28
+998|PRX|Praxis Biologics|became a part of WAL, now owned by Pfizer|0|2010/05/28
+998|JPN|The Research Foundation for Microbial Diseases of Osaka University (BIKEN)||0|2017/11/16
+998|PMC|Sanofi Pasteur|Formerly Aventis Pasteur, Pasteur Merieux Connaught; includes Connaught Laboratories and Pasteur Merieux. Acquired ACAMBIS; Acquired Protein Sciences (8/28/2017)|1|2019/05/02
+998|SCL|Sclavo, Inc.||0|2017/11/16
+998|SOL|Solvay Pharmaceuticals|Part of Abbott|0|2010/05/28
+998|SI|Swiss Serum and Vaccine Inst.|Part of Berna|0|2010/05/28
+998|TAL|Talecris Biotherapeutics|includes Bayer Biologicals|0|2017/11/16
+998|USA|United States Army Medical Research and Material Command||0|2017/11/16
+998|VXG|VaxGen|acquired by Emergent Biodefense Operations Lansing, Inc|0|2010/05/28
+998|WA|Wyeth-Ayerst|became WAL, now owned by Pfizer|0|2010/05/28
+998|WAL|Wyeth|acquired by Pfizer 10/15/2009|1|2010/05/28
+998|ZLB|ZLB Behring|acquired by CSL|0|2010/05/28
+998|OTH|Other manufacturer||1|2010/05/28
+998|UNK|Unknown manufacturer||1|2010/05/28
+998|AKR|Akorn, Inc|Akorn was a labeler and not a manufacturer|0|2017/04/19
+998|PFR|Pfizer, Inc|COVID-19 vaccine in co-development with BioNTech.  Pfizer includes Wyeth-Lederle Vaccines and Pediatrics, Wyeth Laboratories, Lederle Laboratories, and Praxis Biologics|1|2020/10/30
+998|BRR|Barr Laboratories|Subsidiary of Teva Pharmaceuticals|0|2017/11/16
+998|JNJ|Johnson and Johnson|acquired CRUCELL which acquired Berna, parent company of Janssen|1|2020/10/08
+998|PSC|Protein Sciences|Acquired by Sanofi Pasteur (08/28/2017), continues to manufacture vaccines distributed by Sanofi|1|2022/10/18
+998|IDB|ID Biomedical|Part of GlaxoSmithKline|1|2017/11/16
+998|GRF|Grifols|Grifols is a labeler and not a manufacturer.|1|2013/09/05
+998|CRU|Crucell|acquired Berna,  now a J & J company|0|2017/11/16
+998|KED|Kedrion Biopharma|acquired Rho(D) from Ortho|1|2014/04/29
+998|PAX|Emergent Travel Health, Inc (Formerly PaxVax)|Emergent Biosolutions acquired PaxVax 8/2021, US Vaccines starting to label under Emergent Travel Health Inc.  |1|2021/08/03
+998|MCM|MCM Vaccine Company|Partnership between Merck and Sanofi Pasteur|0|2017/11/16
+998|SEQ|Seqirus|Seqirus acquired the flu vaccines from Novartis. It also includes the CSL vaccines.|1|2016/04/13
+998|VAL|Valneva|Distributes through Intercell in the US|1|2016/07/19
+998|DYN|Dynaport||0|2017/11/16
+998|DVX|Dynavax, Inc.||1|2017/10/27
+998|DSI|Dispensing Solutions|Vaccine Relabeler|0|2018/05/10
+998|REB|Rebel Distributors|Vaccine Relabeler|0|2018/05/10
+998|VET|Vetter Pharma Fertigung GmbH & Co. KG||0|2018/05/10
+998|TVA|TEVA Pharmaceuticals USA |BARR Laboratories merged with TEVA in 2007.  The MVX for Barr was retired in 2011,  TEVA continues to produce the former BARR vaccines |1|2019/07/23
+998|BN|Bavarian Nordic A/S|manufacturer of national stockpile smallpox vaccine Jynneos |1|2020/07/17
+998|MOD|Moderna US, Inc.|New vaccine manufacturer effective 11/1/2020  |1|2022/11/01
+998|ASZ|AstraZeneca|Parent Company of MedImmune |1|2022/11/01
+998|JSN|Janssen|Division of Johnson and Johnson, manufacturer of Covid-19 vaccine|1|2022/11/01
+998|SPH|Sinopharm-Biotech|Non-US COVID-19 Vaccine Manufacturer - WHO Authorized|1|2021/07/15
+998|SNV|Sinovac |Non-US COVID-19 Vaccine Manufacturer - WHO Authorized (Sinovac, CoronaVac)|1|2021/07/12
+998|MSP|MSP Vaccine Company - (partnership Merck and Sanofi Pasteur)|US Based - Joint manufacturing partnership, initial vaccine Vaxelis 10/2020|1|2021/07/27
+998|BBI|Bharat Biotech International Limited|Non-US COVID-19 Vaccine Manufacturer - WHO Authorized (COVAXIN)|1|2021/11/09
+998|VBI|VBI Vaccines, Inc|Manufacturer VBI ceased operation and Prehevbio Hep B product recalled effective 11/15/2024.|0|2024/12/06
+998|MDO|Medicago, Inc|Non-US COVID-19 vaccine manufacturer Cofivenz vaccine recognized by ACIP|1|2022/04/13
+998|CAN|CanSino Biologics, Inc|Non-US COVID-19 vaccine manufacturer,  WHO Authorized (CONVIDECIA) on 5/19/2022|1|2022/11/01

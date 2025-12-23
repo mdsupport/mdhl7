@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="urn:cdc:iisb:2011" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="urn:cdc:iisb:2011" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:cdc:iisb:2011" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="urn:cdc:iisb:2011" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsaw="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:complexType name="connectivityTestRequestType">
+        <xsd:sequence>
+            <xsd:element name="echoBack" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="connectivityTestResponseType">
+        <xsd:sequence>
+            <xsd:element name="return" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="submitSingleMessageRequestType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="username" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="password" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="facilityID" nillable="true" type="xsd:string"/>
+            <xsd:element name="hl7Message" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="submitSingleMessageResponseType">
+        <xsd:sequence>
+            <xsd:element name="return" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="submitSingleQueryRequestType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="username" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="password" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="facilityID" nillable="true" type="xsd:string"/>
+            <xsd:element name="hl7Message" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="submitSingleQueryResponseType">
+        <xsd:sequence>
+            <xsd:element name="return" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="submitBatchMessageRequestType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="username" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="password" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="facilityID" nillable="true" type="xsd:string"/>
+            <xsd:element name="hl7Message" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="submitBatchMessageResponseType">
+        <xsd:sequence>
+            <xsd:element name="return" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="submitBatchQueryRequestType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="username" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="password" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="facilityID" nillable="true" type="xsd:string"/>
+            <xsd:element name="hl7Message" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="submitBatchQueryResponseType">
+        <xsd:sequence>
+            <xsd:element name="return" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="soapFaultType">
+        <xsd:sequence>
+            <xsd:element name="Code" type="xsd:integer"/>
+            <xsd:element name="Reason" type="xsd:string"/>
+            <xsd:element name="Detail" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="UnsupportedOperationFaultType">
+        <xsd:sequence>
+            <xsd:element name="Code" type="xsd:integer"/>
+            <xsd:element fixed="UnsupportedOperation" name="Reason"/>
+            <xsd:element name="Detail" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SecurityFaultType">
+        <xsd:sequence>
+            <xsd:element name="Code" type="xsd:integer"/>
+            <xsd:element fixed="Security" name="Reason"/>
+            <xsd:element name="Detail" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="MessageTooLargeFaultType">
+        <xsd:sequence>
+            <xsd:element name="Code" type="xsd:integer"/>
+            <xsd:element fixed="MessageTooLarge" name="Reason"/>
+            <xsd:element name="Detail" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="connectivityTest" type="tns:connectivityTestRequestType"/>
+    <xsd:element name="connectivityTestResponse" type="tns:connectivityTestResponseType"/>
+    <xsd:element name="submitSingleMessage" type="tns:submitSingleMessageRequestType"/>
+    <xsd:element name="submitSingleMessageResponse" type="tns:submitSingleMessageResponseType"/>
+    <xsd:element name="submitSingleQuery" type="tns:submitSingleQueryRequestType"/>
+    <xsd:element name="submitSingleQueryResponse" type="tns:submitSingleQueryResponseType"/>
+    <xsd:element name="submitBatchMessage" type="tns:submitBatchMessageRequestType"/>
+    <xsd:element name="submitBatchMessageResponse" type="tns:submitBatchMessageResponseType"/>
+    <xsd:element name="submitBatchQuery" type="tns:submitBatchQueryRequestType"/>
+    <xsd:element name="submitBatchQueryResponse" type="tns:submitBatchQueryResponseType"/>
+    <xsd:element name="fault" type="tns:soapFaultType"/>
+    <xsd:element name="UnsupportedOperationFault" type="tns:UnsupportedOperationFaultType"/>
+    <xsd:element name="SecurityFault" type="tns:SecurityFaultType"/>
+    <xsd:element name="MessageTooLargeFault" type="tns:MessageTooLargeFaultType"/>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="submitSingleMessageFault">
+    <wsdl:part name="parameters" element="WL5G3N1:fault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitSingleQueryFault">
+    <wsdl:part name="parameters" element="WL5G3N1:fault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitBatchQueryFault">
+    <wsdl:part name="parameters" element="WL5G3N1:fault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitBatchMessageFault">
+    <wsdl:part name="parameters" element="WL5G3N1:fault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="connectivityTestFault">
+    <wsdl:part name="parameters" element="WL5G3N1:fault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitSingleMessageResponse">
+    <wsdl:part name="parameters" element="WL5G3N1:submitSingleMessageResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitSingleMessageRequest">
+    <wsdl:part name="parameters" element="WL5G3N1:submitSingleMessage">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitBatchMessageResponse">
+    <wsdl:part name="parameters" element="WL5G3N1:submitBatchMessageResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitBatchMessageRequest">
+    <wsdl:part name="parameters" element="WL5G3N1:submitBatchMessage">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitBatchQueryResponse">
+    <wsdl:part name="parameters" element="WL5G3N1:submitBatchQueryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitBatchQueryRequest">
+    <wsdl:part name="parameters" element="WL5G3N1:submitBatchQuery">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitSingleQueryResponse">
+    <wsdl:part name="parameters" element="WL5G3N1:submitSingleQueryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="submitSingleQueryRequest">
+    <wsdl:part name="parameters" element="WL5G3N1:submitSingleQuery">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="connectivityTestRequest">
+    <wsdl:part name="parameters" element="WL5G3N1:connectivityTest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="connectivityTestResponse">
+    <wsdl:part name="parameters" element="WL5G3N1:connectivityTestResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="client_ServicePortType" wsp:PolicyURIs="#servicePolicy">
+    <wsdl:operation name="connectivityTest">
+<wsdl:documentation>the connectivity test</wsdl:documentation>
+      <wsdl:input message="WL5G3N1:connectivityTestRequest" wsaw:Action="urn:cdc:iisb:2011:connectivityTest">
+    </wsdl:input>
+      <wsdl:output message="WL5G3N1:connectivityTestResponse" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:connectivityTestResponse">
+    </wsdl:output>
+      <wsdl:fault name="connectivityTestFault" message="WL5G3N1:connectivityTestFault" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:connectivityTest:Fault:UnknownFault">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitSingleMessage">
+<wsdl:documentation>submit single message</wsdl:documentation>
+      <wsdl:input message="WL5G3N1:submitSingleMessageRequest" wsaw:Action="urn:cdc:iisb:2011:submitSingleMessage">
+    </wsdl:input>
+      <wsdl:output message="WL5G3N1:submitSingleMessageResponse" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:submitSingleMessageResponse">
+    </wsdl:output>
+      <wsdl:fault name="submitSingleMessageFault" message="WL5G3N1:submitSingleMessageFault" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:submitSingleMessage:Fault:UnknownFault">
+    </wsdl:fault>
+    </wsdl:operation>
+	<wsdl:operation name="submitSingleQuery">
+<wsdl:documentation>submit single query</wsdl:documentation>
+      <wsdl:input message="WL5G3N1:submitSingleQueryRequest" wsaw:Action="urn:cdc:iisb:2011:submitSingleQuery">
+    </wsdl:input>
+      <wsdl:output message="WL5G3N1:submitSingleQueryResponse" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:submitSingleQueryResponse">
+    </wsdl:output>
+      <wsdl:fault name="submitSingleQueryFault" message="WL5G3N1:submitSingleQueryFault" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:submitSingleQuery:Fault:UnknownFault">
+    </wsdl:fault>
+    </wsdl:operation>
+	<wsdl:operation name="submitBatchMessage">
+<wsdl:documentation>submit batch message</wsdl:documentation>
+      <wsdl:input message="WL5G3N1:submitBatchMessageRequest" wsaw:Action="urn:cdc:iisb:2011:submitBatchMessage">
+    </wsdl:input>
+      <wsdl:output message="WL5G3N1:submitBatchMessageResponse" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:submitBatchMessageResponse">
+    </wsdl:output>
+      <wsdl:fault name="submitBatchMessageFault" message="WL5G3N1:submitBatchMessageFault" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:submitBatchMessage:Fault:UnknownFault">
+    </wsdl:fault>
+    </wsdl:operation>
+	<wsdl:operation name="submitBatchQuery">
+<wsdl:documentation>submit batch query</wsdl:documentation>
+      <wsdl:input message="WL5G3N1:submitBatchQueryRequest" wsaw:Action="urn:cdc:iisb:2011:submitBatchQuery">
+    </wsdl:input>
+      <wsdl:output message="WL5G3N1:submitBatchQueryResponse" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:submitBatchQueryResponse">
+    </wsdl:output>
+      <wsdl:fault name="submitBatchQueryFault" message="WL5G3N1:submitBatchQueryFault" wsaw:Action="urn:cdc:iisb:2011:IIS_PortType:submitBatchQuery:Fault:UnknownFault">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="client_ServiceSoap12Binding" type="WL5G3N1:client_ServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsaw:UsingAddressing wsdl:required="false"/>
+    <wsdl:operation name="connectivityTest">
+      <soap12:operation soapAction="urn:cdc:iisb:2011:connectivityTest" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="connectivityTestFault">
+        <soap12:fault name="connectivityTestFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="submitSingleMessage">
+      <soap12:operation soapAction="urn:cdc:iisb:2011:submitSingleMessage" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="submitSingleMessageFault">
+        <soap12:fault name="submitSingleMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+	<wsdl:operation name="submitSingleQuery">
+      <soap12:operation soapAction="urn:cdc:iisb:2011:submitSingleQuery" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="submitSingleQueryFault">
+        <soap12:fault name="submitQueryMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+	<wsdl:operation name="submitBatchMessage">
+      <soap12:operation soapAction="urn:cdc:iisb:2011:submitBatchMessage" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="submitBatchMessageFault">
+        <soap12:fault name="submitBatchMessageFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+	<wsdl:operation name="submitBatchQuery">
+      <soap12:operation soapAction="urn:cdc:iisb:2011:submitBatchQuery" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="submitBatchQueryFault">
+        <soap12:fault name="submitBatchQueryFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="client_Service">
+    <wsdl:port name="client_ServiceHttpsSoap12Endpoint" binding="WL5G3N1:client_ServiceSoap12Binding">
+      <soap12:address location="https://cdph-interop-stage.cdph.ca.gov:443/services/client_Service.client_ServiceHttpSoap12Endpoint"/>
+    </wsdl:port>
+  </wsdl:service>
+    <wsp:Policy wsu:Id="servicePolicy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"><wsp:ExactlyOne><wsp:All><wsam:Addressing wsp:Optional="true" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"><wsp:Policy><wsam:AnonymousResponses/></wsp:Policy></wsam:Addressing></wsp:All></wsp:ExactlyOne></wsp:Policy>
+</wsdl:definitions>
