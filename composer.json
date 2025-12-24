@@ -7,10 +7,9 @@
     "license": "MIT",
 
     "require": {
+        "adodb/adodb-php": "^5.22",
         "aranyasen/hl7": "^3.2",
         "mdsupport/mdpub": "^0.0",
-        "sergeytsalkov/meekrodb": "^3.1",
-        "ulrichsg/getopt-php": "^4.0",
         "vlucas/phpdotenv": "^5.6"
     },
 
