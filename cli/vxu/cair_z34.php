@@ -1,15 +1,16 @@
 <?php
 /**
- * Batch submission of VXU information to CAlifornia Immunization Registry
+ * Get Z34 – Request Complete Immunization History from CAlifornia Immunization Registry
  *
  * Copyright (C) 2025-2026 MD Support <mdsupport@users.sourceforge.net>
  *
- * @package   Mdvxu
+ * @package   Mdhl7
  * @author    MD Support <mdsupport@users.sourceforge.net>
  * @license https://github.com/openemr/openemr/blob/master/LICENSE GNU General Public License 3
  */
 
 require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/CAIRsoap.php';
 
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Messages\ACK;
@@ -22,7 +23,6 @@ use Aranyasen\HL7\Segments\OBX;
 use Aranyasen\HL7\Segments\RXR;
 use Dotenv\Dotenv;
 use Mdsupport\Mdpub\DevObj\DevDB;
-use Mdsupport\Mdvxu\IR\SoapClientCA;
 
 define('NAME', 'OpenEMR-VXU');
 define('VERSION', '.2');
@@ -61,7 +61,7 @@ function db_init($connSrc)
 {
     $connKeys = preg_grep("/^if\.OpenEMR\.db/",array_keys($connSrc));
     if (count($connKeys) < 4) {
-        echo "{$connSrc['_dotenv']}/dotenv/mdvxu.env missing or without database connection entries.";
+        echo "{$connSrc['_dotenv']}/dotenv/mdhl7.env missing or without database connection entries.";
         return false;
     }
     $adoConn = adoNewConnection($connSrc['if.OpenEMR.dbdriver'] ?? 'mysqli');
@@ -109,7 +109,7 @@ if (php_sapi_name() == 'cli') {
     $env['_dotenv'] = $_SERVER["HOME"];
 }
 
-$dotenv = Dotenv::createImmutable("{$env['_dotenv']}/dotenv", 'mdvxu.env');
+$dotenv = Dotenv::createImmutable("{$env['_dotenv']}/dotenv", 'mdhl7.env');
 $dotenv->load();
 
 $objDB = db_init($env);
@@ -120,12 +120,20 @@ if (!$objDB) {
 
 openlog(NAME . ': ' . VERSION, LOG_PID | LOG_PERROR, LOG_USER);
 
-$cairSOAP = new SoapClientCA([
-    'username' => $env['if.IR.user'],
-    'password' => $env['if.IR.password'],
-    'facilityID' => $env['if.IR.facility'],
-    'wsdlUrl' => __DIR__ . '/'. $env['if.IR.wsdl']
-]);
+$cairSOAP = new CAIRsoap();
+try {
+    $cairSOAP->setFromGlobals([
+        'username' => $env['if.IR.user'],
+        'password' => $env['if.IR.password'],
+        'facility' => $env['if.IR.facility'],
+        'wsdl_url' => __DIR__ . '/'. $env['if.IR.wsdl']
+    ])
+    ->initializeSoapClient();
+}catch (Exception $e) {
+    echo $e->getMessage();
+    
+    exit;
+}
 
 /* Complex SQL -
  * SELECT immunizations records
@@ -142,17 +150,17 @@ $aaExec = [
             DATE_FORMAT(imm.administered_date,'%Y%m%d') as administered_Ymd,
             cl.fname cl_fname, cl.lname cl_lname, IFNULL(cl.title, 'MA') cl_title,
             mxu.code mxu_code
-        FROM immunizations imm
+        FROM prd_immunizations imm
         INNER JOIN (
     	 	SELECT cd.code, cd.code_text manufacturer FROM codes cd
     		INNER JOIN code_types ct ON ct.ct_id=cd.code_type
     		WHERE ct.ct_key='MXU') mxu ON mxu.manufacturer = imm.manufacturer
         INNER JOIN (
-            SELECT DISTINCT lot_number FROM drug_inventory) lots ON lots.lot_number = imm.lot_number
-        INNER JOIN patient_data pt ON pt.pid = imm.patient_id
+            SELECT DISTINCT lot_number FROM prd_drug_inventory) lots ON lots.lot_number = imm.lot_number
+        INNER JOIN prd_patient_data pt ON pt.pid = imm.patient_id
         LEFT JOIN hl7log IR ON IR.msg_type='VXU' AND IR.link_source='immunizations' AND imm.id = IR.link_key
-        LEFT JOIN users md ON md.id = IFNULL(imm.ordering_provider,pt.providerID)
-        LEFT JOIN users cl ON cl.id = IFNULL(imm.administered_by_id,pt.providerID)
+        LEFT JOIN prd_users md ON md.id = IFNULL(imm.ordering_provider,pt.providerID)
+        LEFT JOIN prd_users cl ON cl.id = IFNULL(imm.administered_by_id,pt.providerID)
         LEFT JOIN list_options du ON du.list_id='drug_units' AND du.option_id=imm.amount_administered_unit
         WHERE IR.link_key IS NULL
         AND LENGTH(imm.cvx_code) > 1
@@ -173,23 +181,10 @@ $rsVxu = $objDB->execSql($aaExec);
 
 $ackCount = new stdClass();
 $nowdate = date('Ymd');
-foreach ($rsVxu as $vxu) {
-    syslog(LOG_DEBUG, sprintf("Immunization %d for PID %d", $vxu['id'], $vxu['patient_id']));
-    
-    // Fix Title
-    if ($vxu['md_title'] == 'Dr.') {
-        $vxu['md_title'] = 'MD';
-    }
-    
-    if ($vxu['cl_title'] == 'Dr.') {
-        $vxu['cl_title'] = 'MD';
-    } elseif (empty($vxu['cl_title'])) {
-        $vxu['cl_title'] = 'MA';
-    }
-    
-    $rsPt = $objDB->execSql([
-        'sql' => "select * from patient_data where pid = ?",
-        'bind' => [$vxu['patient_id']],
+
+$rsPt = $objDB->execSql([
+        'sql' => "select * from prd_patient_data where pid = ?",
+        'bind' => [26118],
         'sfx' => "limit 1",
         'return' => 'array',
         'debug' => false,
@@ -204,7 +199,7 @@ foreach ($rsVxu as $vxu) {
     $objMSH->setSendingFacility($env['if.IR.facility']);
     $objMSH->setReceivingFacility($env['if.IR.region']);
     $objMSH->setDateTimeOfMessage(date('YmdHis') . "+0000");
-    $objMSH->setMessageType('VXU^V04^VXU_V04');
+    $objMSH->setMessageType('QBP^Q11^QBP_Q11');
     $objMSH->setMessageControlId(date('Ymdhis') . $vxu['cvx_code']. $vxu['id'] );
     $objMSH->setProcessingId('P');
     $objMSH->setVersionId('2.5.1');
@@ -213,165 +208,23 @@ foreach ($rsVxu as $vxu) {
 //    $objMSH->setField(21, ''); // Message Profile Identifier
 //    $objMSH->setField(22, $env['if.IR.region']); // Sending Responsible Organization
     
-    // Create PID segment
-    $objPID = new PID();
-//    $objPID->setSetId('1');
-    // Patient identifier list: 1-id, 4-source, 5-id type (MR-Medical Record)
-    $objPID->setPatientIdentifierList($vxu['patient_id'] . '^^^OPENEMR^MR');
-    // Patient name: 1-Last*, 2-First*,3-Middle, 4-Sfx, 7-Type (L-Legal Name)
-    // CAIR - The last, first, and middle names must be alpha characters only (A-Z)
+    // Create QPD segment
+    $objQPD = new Segment("QPD");  ;
+    $objQPD->setField(1, "Z34^Request Complete Immunization History^HL70471"); ;
+
     $strNameAZ = sprintf(
         '%s^%s^^^^^L',
         preg_replace('/[^a-z]/i', ' ', $patient['lname']),
         preg_replace('/[^a-z]/i', ' ', $patient['fname'])
     );
-    $objPID->setPatientName($strNameAZ);
+    $objQPD->setField(4, $strNameAZ);
     // Date of birth
-    $objPID->setDateTimeOfBirth(preg_replace('/-/', '', $patient['DOB']));
+    $objQPD->setField(6, preg_replace('/-/', '', $patient['DOB']));
     
-    // Warning - Library validation override for 'X'
-    // $objPID->setSex($sex);
-    $sex = 'X';
-    if ($patient['sex'] == 'Male') {
-        $sex = 'M';
-    } else if ($patient['sex'] == 'Female') {
-        $sex = 'F';
-    } else if ($patient['sex'] == 'Unknown') {
-        $sex = 'U';
-    }
-    $objPID->setField(8, $sex);
-       
-    // Race
-    if (!empty($patient['race'])) {
-        $rsPtRace = $objDB->execSql([
-            'sql' => 'select title,notes from list_options where list_id = ? and option_id = ?',
-            'bind' => ["race", $patient['race']],
-            'sfx' => "limit 1",
-            'return' => 'array',
-            'debug' => false,
-        ]);
-        $race = $rsPtRace[0];
-    }
-    if (!isset($race) || empty($race['title']) || empty($race['notes'])) {
-        $race = [
-            'notes' => 'PHC1175',
-            'title' => 'Prefer Not to Say',
-        ];
-    }
-
-    $objPID->setRace($race['notes'] . '^' . $race['title'] . '^HL7005');
-    
-    // Ethnic group
-    switch ($patient['ethnicity']) {
-        case "hisp_or_latin":
-            $objPID->setEthnicGroup('2135-2^Hispanic or Latino^CDCREC');
-        case "not_hisp_or_latin":
-            $objPID->setEthnicGroup("2186-5^Not Hispanic or Latino^CDCREC");
-        default: // Unknown
-            $objPID->setEthnicGroup("PHC1175^Prefer Not to Say^CDCREC");
-    }
-    
-    // Create PD1 segment
-    $objPD1 = new PD1();
-    $objPD1->setField(12, 'Y');
-    $objPD1->setField(13, date("Ymd", strtotime("-1 days")));
-    $objPD1->setField(16, 'A');
-    $objPD1->setField(17, date('Ymd', strtotime("-1 days")));
-    
-    // Create ORC segment
-    $objORC = new ORC();
-    $objORC->setOrderControl('RE');
-    if (isset($vxu['id'])) {
-        $objORC->setFillerOrderNumber($vxu['id']);
-    }
-    
-    if (!empty($vxu['md_npi']) && !empty($vxu['md_fname']) &&
-        !empty($vxu['md_lname']) && !empty($vxu['md_title'])) {
-        $objORC->setOrderingProvider(
-            $vxu['md_npi'] . '^' . $vxu['md_lname'] . '^' . $vxu['md_fname'] .
-            '^^^^^^NPPES^L^^^NPI^^^^^^^^' . $vxu['md_title']
-            );
-    } else {
-        syslog(LOG_WARNING, 'Did not receive complete ordering provider info. ' .
-            'Sending blank ORC-12.');
-    }
-        
-    // Create RXA segment
-    $objRXA = new RXA();
-    $objRXA->setGiveSubIdCounter('0');
-    $objRXA->setAdministrationSubIdCounter('1');
-    $objRXA->setDateTimeStartAdministration($vxu['administered_Ymd']);
-    // RXA segment requires array
-    $objRXA->setAdministeredCode([sprintf("%02d", $vxu['cvx_code']) . '^^CVX']);
-    
-    // Administered Amount
-    if (isset($vxu['amount_administered']) && ($vxu['amount_administered']> 0)) {
-        $objRXA->setAdministeredAmount($vxu['amount_administered']);
-        $objRXA->setAdministeredUnits([$vxu['dose_units']]);
-    } else {
-        $objRXA->setAdministeredAmount('999');
-    }
-        
-    // Administration notes requires array 
-    $objRXA->setAdministrationNotes(['00^NEW IMMUNIZATION RECORD^NIP001']);
-    
-    $objRXA->setAdministeringProvider(["^{$vxu['cl_lname']}^{$vxu['cl_fname']}^^^^^^^^^^^^^^^^^^{$vxu['cl_title']}"]);
-    
-    // Administered at location
-    $objRXA->setAdministeredAtLocation(['^^^' . $env['if.IR.orgcode']]);
-    
-    // Substance Lot Number
-    if (isset($vxu['lot_number'])) {
-        $objRXA->setSubstanceLotNumber($vxu['lot_number']);
-    }
-    
-    // Substance Expiration Date
-    if (isset($vxu['expiration_date'])) {
-        $objDateExp = strtotime($vxu['expiration_date']);
-        $objRXA->setSubstanceExpirationDate(date('Ymd', $objDateExp));
-    }
-    
-    // Substance manufacturer
-    if (isset($vxu['manufacturer'])) {
-        $objRXA->setSubstanceManufacturerName([$vxu['mxu_code'] .'^' . $vxu['manufacturer'] . '^MVX']);
-    }
-        
-    // Completion Status
-    $objRXA->setCompletionStatus('CP');
-    
-    // Action coded
-    $objRXA->setActionCode('A');
-
-    // Create OBX segment - Funding program eligibility category
-    $objOBX1 = new OBX();
-    $objOBX1->setID('1');
-    $objOBX1->setValueType('CE');
-    $objOBX1->setObservationIdentifier('64994-7^Vaccine funding program eligibility category^LN');
-    $objOBX1->setObservationSubId('1');
-    $objOBX1->setObservationValue('V01^Private Pay/Insurance^HL70064');
-    $objOBX1->setObserveResultStatus('F');
-    $objOBX1->setDateTimeOfTheObservation($vxu['administered_Ymd']);
-
-    
-    // Create OBX segment - Funding source
-    $objOBX2 = new OBX();
-    $objOBX2->setID('2');
-    $objOBX2->setValueType('CE');
-    $objOBX2->setObservationIdentifier('30963-3^Vaccine Funding Source^LN');
-    $objOBX2->setObservationSubId('1');
-    $objOBX2->setObservationValue('PHC70^Private Funds^CDCPHINVS');
-    $objOBX2->setObserveResultStatus('F');
-    $objOBX2->setDateTimeOfTheObservation($vxu['administered_Ymd']);
-
     // Create the message
     $objMessage = new Message();
     $objMessage->addSegment($objMSH);
-    $objMessage->addSegment($objPID);
-    $objMessage->addSegment($objPD1);
-    $objMessage->addSegment($objORC);
-    $objMessage->addSegment($objRXA);
-    $objMessage->addSegment($objOBX1);
-    $objMessage->addSegment($objOBX2);
+    $objMessage->addSegment($objQPD);
     
     // Convert message to string
     $hl7 = $objMessage->toString(true); // true for pretty print
@@ -397,8 +250,16 @@ foreach ($rsVxu as $vxu) {
             }
         }
     }
+    var_dump($cairResponseVXU->return);
+    exit();
+    /*
+    $cairResponseVXU = $cairResponseVXU->return;
+    if (strpos($cairResponseVXU, 'MSH') === false) {
+        syslog(LOG_ERR, "Failed to send HL7");
+    }
+    */
     record_result($hl7, $cairResponseVXU->return, $vxu['id'], $env);
-}
+
 // Log summary counts
 foreach ($ackCount as $ackCode => $acks) {
     if ($ackCode == 'AA') {

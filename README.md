@@ -1,18 +1,12 @@
-# VXU (Immunization Records) transmission to CA Immunizations Registry (CAIR)
+### HL7 based OpenEMR transmissions
 
-CA requires all practices to submit information about immunizations administered in their clinics. This may be done with manual data entry or as SOAP requests. 
 
-This tool will submit VXU SOAP requests from [OpenEMR](http://open-emr.org) to [CAIR](https://cairweb.org/) and record the responses.
+This package currently supports following HL7 interfaces to OpenEMR
 
-It is suggested to use cronjobs for automated submissions.  A typical CRON job may look like:
+- VXU for CA Immunizations Registry (CAIR)
+- Generic Lab Order results
 
-```
-# To submit immunization records to CAIR every 4 hours
-0 */4 * * * /usr/bin/php /var/www/html/mdvxu/vxu_cair.php
-```
+#### Common Setup
+1. Create hl7log table in your OpenEMR database to record submissions and responses. Review and run [2.hl7log.sql](./2.hl7log.sql).
 
-It is assumed that the CVX codes in immunization records are present in OpenEMR codes table.  Additional setup requirements are included in [setup](./setup/README.md) directory.
-
-See also 
-1. [Dennison Williams'](https://github.com/DennisonWilliams) COVID VXU utility [openemr_cair_synch](https://github.com/DennisonWilliams/openemr_cair_synch)
-2. [Daniel Pflieger's](https://github.com/growlingflea) plug-ins [[1](https://github.com/growlingflea/openemr/commits/rel-501-CAIR-plug-in),[2](https://github.com/growlingflea/openemr/commits/rel-500-CAIR2-plugin)].
+2. Copy and update [3.mdhl7.env.sample](./3.mdhl7.env.sample) to the dotenv subdirectory of *home* of the user that will run these background jobs (example - //home/**emrsys**/dotenv/mdhl7.env).<br> *Utilities in this package do not use any of OpenEMR standard files. So database login information contained in sqlconf.php files should be specified in mdhl7.env file.*
