@@ -1,6 +1,6 @@
 <?php
 /**
- * Batch submission of VXU information to CAlifornia Immunization Registry
+ * Fetch hl7 lab results
  *
  * Copyright (C) 2025-2026 MD Support <mdsupport@users.sourceforge.net>
  *
